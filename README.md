@@ -515,14 +515,14 @@ GET /api/health
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/SurakiatP/internal-AI-assistant
 cd internal-agentic-ai-assistant
 ```
 
 2. **Configure environment**
 ```bash
 # Copy example environment file
-cp .env.example backend/.env
+cp backend/.env.example backend/.env
 
 # Edit if needed (defaults should work)
 ```
@@ -553,7 +553,7 @@ docker exec -it fastapi-backend python /app/scripts/ingest.py
 
 Expected output:
 ```
-Processing time: ~4 minutes
+Processing time: ~3 minutes
 Documents processed: 94 (45 bug reports + 50 feedbacks)
 ```
 
