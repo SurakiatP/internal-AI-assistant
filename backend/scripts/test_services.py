@@ -24,7 +24,7 @@ def test_llm_service():
     print(f"  LLM Health: {'/ Healthy' if llm_healthy else '! Unhealthy'}")
     print(f"  Embedding Health: {'/ Healthy' if embedding_healthy else '! Unhealthy'}")
     
-    # Test 2: Simple text generation
+    # Test 2: Simple text generation.
     print("\n✓ Test 2: Text Generation")
     response = llm_service.generate_text("Say 'Hello' in one word", temperature=0.1)
     print(f"  Response: {response}")
@@ -37,7 +37,7 @@ def test_llm_service():
     print(f"  Text: {text}")
     print(f"  Category: {category}")
     
-    # Test 4: Severity classification
+    # Test 4: Severity classification.
     print("\n✓ Test 4: Severity Classification")
     text = "The app crashes when I try to login"
     severity = llm_service.classify_severity(text)
