@@ -1,0 +1,4 @@
+# Gradio Frontend Requirements
+gradio==4.19.2
+requests==2.31.0
+huggingface-hub==0.20.0
