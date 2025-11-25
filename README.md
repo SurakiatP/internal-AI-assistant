@@ -324,7 +324,7 @@ internal-agentic-ai-assistant/
 | **Embeddings** | nomic-embed-text | latest | 768 dims (vs 4096), 40% faster, better quality |
 | **Vector DB** | Qdrant | 1.15.x | Fast similarity search, metadata filtering, Python SDK |
 | **Backend** | FastAPI | 0.104.1 | Async support, auto-docs, Pydantic validation |
-| **Frontend** | Gradio | 4.44.0 | Rapid prototyping, JSON display, minimal code |
+| **Frontend** | Gradio | 4.19.0 | Rapid prototyping, JSON display, minimal code |
 | **Orchestration** | LangChain | 0.1.0 | Tool abstractions, prompt templates, vector store integration |
 
 ### Infrastructure
