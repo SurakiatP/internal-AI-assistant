@@ -1,0 +1,397 @@
+# ============================================================================
+# Internal Agentic AI Assistant - .gitignore
+# ============================================================================
+
+# ============================================================================
+# Python
+# ============================================================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+
+# ============================================================================
+# Docker
+# ============================================================================
+# Docker volumes
+docker-compose.override.yml
+
+# ============================================================================
+# Database & Vector Store
+# ============================================================================
+# Qdrant data (if not using Docker volumes)
+qdrant_storage/
+.qdrant/
+
+# SQLite databases
+*.db
+*.sqlite
+
+
+# ============================================================================
+# Data Files
+# ============================================================================
+# Processed data (except sample data)
+!backend/data/processed/*.json
+backend/data/processed/*.csv
+backend/data/processed/*.xlsx
+
+# Raw data files (keep originals in version control if small)
+# Uncomment if your raw data is large
+# backend/data/raw/*.docx
+# backend/data/raw/*.pdf
+# backend/data/raw/*.xlsx
+
+# Temporary data
+backend/data/temp/
+backend/data/tmp/
+
+# Backup files
+*.bak
+*.backup
+*~
+
+
+# ============================================================================
+# Logs
+# ============================================================================
+# Application logs
+logs/
+*.log
+*.log.*
+
+# FastAPI logs
+fastapi.log
+uvicorn.log
+
+# LLM logs
+llm_requests.log
+ollama.log
+
+
+# ============================================================================
+# IDE & Editors
+# ============================================================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# JetBrains IDEs
+.idea/
+*.iml
+out/
+
+
+# ============================================================================
+# Operating System
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+
+# ============================================================================
+# Node.js (if using for frontend tools)
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+
+# ============================================================================
+# Frontend (Gradio)
+# ============================================================================
+# Gradio temporary files
+gradio_cached_examples/
+flagged/
+
+
+# ============================================================================
+# Secrets & Credentials
+# ============================================================================
+# Environment files with secrets
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# API keys
+*.pem
+*.key
+*.cert
+*.crt
+secrets.json
+credentials.json
+
+# SSH keys
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+
+# ============================================================================
+# Models & Embeddings (if storing locally)
+# ============================================================================
+# Large model files
+*.bin
+*.safetensors
+*.gguf
+*.pth
+*.h5
+*.pkl
+
+# Ollama models (handled by Docker)
+# ollama_data/
+
+
+# ============================================================================
+# Testing
+# ============================================================================
+# Test outputs
+test_outputs/
+test_results/
+.coverage
+htmlcov/
+.pytest_cache/
+
+
+# ============================================================================
+# Documentation
+# ============================================================================
+# Build documentation
+docs/_build/
+docs/.doctrees/
+site/
+
+
+# ============================================================================
+# Temporary Files
+# ============================================================================
+*.tmp
+*.temp
+.cache/
+.temp/
+
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+# Exclude processed unified documents (can be regenerated)
+!backend/data/processed/unified_documents.json
+
+# Exclude large uploaded files for testing
+# backend/data/raw/test_*.docx
+# backend/data/raw/large_*.pdf
+
+# Exclude experimental notebooks
+notebooks/scratch/
+*.ipynb_checkpoints/
+
+
+# ============================================================================
+# Keep These Files
+# ============================================================================
+# Force include important config files
+!.env.example
+!docker-compose.yml
+!Dockerfile
+!.dockerignore
+!requirements.txt
+!README.md
+
+# Force include sample data
+!backend/data/raw/ai_test_bug_report.docx
+!backend/data/raw/ai_test_user_feedback.docx
