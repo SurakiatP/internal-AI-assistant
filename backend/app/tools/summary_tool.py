@@ -98,7 +98,7 @@ def summary_tool(issue_text: str) -> Dict[str, Any]:
         result = generate_structured_output(
             prompt=SUMMARY_PROMPT_TEMPLATE.format(issue_text=issue_text),
             output_schema=output_schema,
-            temperature=0.3  # Lower temperature for consistent analysis
+            temperature=0.3
         )
         
         # Validate severity
@@ -113,7 +113,7 @@ def summary_tool(issue_text: str) -> Dict[str, Any]:
             elif "low" in severity_lower:
                 result["severity"] = "Low"
             else:
-                result["severity"] = "Medium"  # Default
+                result["severity"] = "Medium"
         
         # Ensure lists are not empty
         if not result.get("components"):

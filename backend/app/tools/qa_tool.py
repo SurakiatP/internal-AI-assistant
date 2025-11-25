@@ -44,10 +44,10 @@ Provide a clear, concise answer:"""
 
 def qa_tool(
     query: str,
-    top_k: int = 10,  # Increased from 5
+    top_k: int = 10,
     filter_category: str = None,
     filter_severity: str = None,
-    score_threshold: float = 0.5  # Add configurable threshold
+    score_threshold: float = 0.5
 ) -> Dict[str, Any]:
     """
     Q&A Tool: Answer questions using internal documents.
@@ -82,7 +82,7 @@ def qa_tool(
             top_k=top_k,
             filter_category=filter_category,
             filter_severity=filter_severity,
-            score_threshold=score_threshold  # Apply threshold in search
+            score_threshold=score_threshold
         )
         
         print(f"   Found {len(search_results)} documents (score >= {score_threshold})")
