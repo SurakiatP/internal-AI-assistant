@@ -257,7 +257,7 @@ Access the web interface at `http://localhost:7860`
 
 ![Gradio UI](docs/images_for_readme/gradio_dashboard.png)
 ![Gradio UI2](docs/images_for_readme/gradio_json_response.png)
-![Gradio UI3](docs/images_for_readme/gradio_json_response.png)
+![Gradio UI3](docs/images_for_readme/gradio_formatted_response.png)
 
 **Key Features:**
 - Clean input interface with advanced options
